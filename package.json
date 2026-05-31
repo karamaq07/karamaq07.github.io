@@ -1,0 +1,22 @@
+{
+  "name": "wordpress-saas-ai-portfolio",
+  "version": "1.0.0",
+  "description": "Premium modern portfolio for WordPress Plugin, SaaS, and AI Automation Developer",
+  "main": "index.html",
+  "scripts": {
+    "dev": "browser-sync start --server --files \"index.html, css/*.css, js/*.js\" --no-notify"
+  },
+  "keywords": [
+    "portfolio",
+    "wordpress",
+    "saas",
+    "ai",
+    "automation",
+    "static"
+  ],
+  "author": "Karamaq",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^3.0.3"
+  }
+}

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>WordPress Plugin, SaaS & AI Automation Developer Portfolio</title>
+  <meta name="description" content="Senior software engineering specialist building performance-tuned WordPress plugins, full-stack SaaS platforms, and secure AI automation pipelines.">
+  <meta name="keywords" content="WordPress Developer, WordPress Plugin Developer, SaaS Developer, Full Stack Developer, AI Automation, Workflow Engineer, n8n, Make.com, PHP, React, Node.js">
+  <meta name="author" content="Karamaq">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="WordPress Plugin, SaaS & AI Automation Developer Portfolio">
+  <meta property="og:description" content="Senior engineering specialist constructing high-performance plugins, secure SaaS dashboards, and autonomous AI integrations.">
+  <meta property="og:image" content="">
+  
+  <!-- Favicon Preconnects -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Master Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION BAR
+       ========================================================================== -->
+  <header class="header" id="header" role="banner">
+    <div class="container header-container">
+      <a href="#home" class="logo" aria-label="Karamaq Portfolio Home">
+        <span>&lt;/&gt;</span> KARAMAQ
+      </a>
+      
+      <nav class="nav" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#services" class="nav-link">Expertise</a></li>
+          <li><a href="#tech" class="nav-link">Stack</a></li>
+          <li><a href="#portfolio" class="nav-link">Work</a></li>
+          <li><a href="#playground" class="nav-link">Playground</a></li>
+          <li><a href="#timeline" class="nav-link">Milestones</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light website theme">
+          <!-- Sun Icon (Light Mode) -->
+          <svg class="sun-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.07" x2="5.64" y2="17.66"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (Dark Mode) -->
+          <svg class="moon-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle responsive navigation menu">
+          <svg style="width:24px; height:24px;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-tag">WordPress • SaaS • AI Automation</span>
+          <h1 class="hero-title">
+            Scaling Web Apps, Plugins & <span class="accent">AI Workflows.</span>
+          </h1>
+          <p class="hero-desc">
+            Hi, I'm Karamaq <span class="wave-emoji">👋</span>. A senior software engineer crafting ultra-fast custom WordPress plugins, full-stack SaaS subscriptions, and autonomous AI automation pipelines that eliminate operational overhead.
+          </p>
+          <div class="hero-actions">
+            <a href="#portfolio" class="btn btn-primary">
+              View My Work
+              <svg style="width:18px; height:18px;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Let's Discuss Project</a>
+          </div>
+        </div>
+        
+        <!-- Interactive Terminal Component -->
+        <div class="terminal-wrapper reveal reveal-scale">
+          <div class="terminal">
+            <div class="terminal-header">
+              <div class="terminal-buttons">
+                <span class="terminal-btn close"></span>
+                <span class="terminal-btn min"></span>
+                <span class="terminal-btn max"></span>
+              </div>
+              <span class="terminal-title">guest@karamaq.dev:~</span>
+              <div style="width: 44px;"></div>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+              <!-- JS mounts code sequence here -->
+            </div>
+            <form class="terminal-input-line" id="terminal-form" style="padding: 0 1.25rem 1.25rem 1.25rem;">
+              <span class="terminal-prompt">guest@github.io:~$</span>
+              <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" placeholder="type 'help'..." aria-label="Terminal Shell Command Line">
+              <span class="terminal-cursor"></span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TRUST METRICS PANEL
+         ========================================================================== -->
+    <section class="trust-metrics" aria-label="Authority Metrics Dashboard">
+      <div class="container metrics-grid">
+        <div class="metric-card reveal reveal-up">
+          <div class="metric-number">50+</div>
+          <div class="metric-label">Custom Plugins Built</div>
+          <div class="metric-desc">Zero security gaps, perfectly optimized hooks</div>
+        </div>
+        <div class="metric-card reveal reveal-up delay-100">
+          <div class="metric-number">99.9%</div>
+          <div class="metric-label">SaaS System Uptime</div>
+          <div class="metric-desc">Robust databases, load-balanced Express nodes</div>
+        </div>
+        <div class="metric-card reveal reveal-up delay-200">
+          <div class="metric-number">150k+</div>
+          <div class="metric-label">Active Deployments</div>
+          <div class="metric-desc">Trusted by developers and global WooCommerce shops</div>
+        </div>
+        <div class="metric-card reveal reveal-up delay-300">
+          <div class="metric-number">100%</div>
+          <div class="metric-label">AI Workflow Autonomy</div>
+          <div class="metric-desc">Replacing manual operations with self-healing agents</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CORE SERVICES & EXPERTISE
+         ========================================================================== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag">SERVICES</span>
+          <h2 class="section-title">Core Development Domains</h2>
+          <p class="section-desc">Engineering bespoke technical products designed to run fast, securely scale, and maximize client workflow conversions.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- WordPress Engineering -->
+          <div class="service-card wp reveal reveal-up">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:28px; height:28px;">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">WordPress Plugins</h3>
+            <p class="service-desc">Lightweight, customized code snippets and plugins engineered to integrate seamlessly into WooCommerce, Gutenberg, and WP core. High focus on hook optimizations.</p>
+            <ul class="service-features">
+              <li class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                WooCommerce API & payment gateway customizations
+              </li>
+              <li class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Gutenberg native block suites (React-based)
+              </li>
+              <li class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Security sanitization & OWASP best practices
+              </li>
+            </ul>
+          </div>
+
+          <!-- SaaS Dashboard Apps -->
+          <div class="service-card saas reveal reveal-up delay-100">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:28px; height:28px;">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">SaaS Architecture</h3>
+            <p class="service-desc">Designing, coding, and maintaining robust full-stack software applications featuring multi-tenant database clusters, JWT user security, and transaction billing setups.</p>
+            <ul class="service-features">
+              <li class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                High-availability relational DB structures
+              </li>
+              <li class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                RESTful and GraphQL secure back-end APIs
+              </li>
+              <li class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Seamless Stripe recurring subscription logic
+              </li>
+            </ul>
+          </div>
+
+          <!-- AI & Automation -->
+          <div class="service-card ai reveal reveal-up delay-200">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:28px; height:28px;">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="16"></line>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">AI Automation</h3>
+            <p class="service-desc">Replacing manual operating loops with reliable AI agents. Connecting vector search, LLMs (OpenAI, Claude), and automation platforms (n8n, Make.com) to local business systems.</p>
+            <ul class="service-features">
+              <li class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                LLM prompt tuning & custom agent behaviors
+              </li>
+              <li class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Self-healing complex automation runs on n8n
+              </li>
+              <li class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Vector storage integration (Pinecone/Chroma)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERACTIVE TECH STACK
+         ========================================================================== -->
+    <section class="section" id="tech" style="background-color: var(--bg-secondary); border-top:1px solid var(--border-color); border-bottom:1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag">ENGINEERING SUITE</span>
+          <h2 class="section-title">The Technical Stack</h2>
+          <p class="section-desc">Highly specialized in modern, performant, and reliable technologies configured to execute modern client deliverables.</p>
+        </div>
+
+        <div class="tech-grid">
+          <!-- PHP -->
+          <div class="tech-card wp reveal reveal-scale">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:36px; height:36px;"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+            </div>
+            <div class="tech-name">PHP Core</div>
+            <div class="tech-proficiency">WordPress Core engine</div>
+          </div>
+          <!-- React -->
+          <div class="tech-card saas reveal reveal-scale delay-100">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:36px; height:36px;"><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(30 12 12)"></ellipse><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(90 12 12)"></ellipse><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(150 12 12)"></ellipse></svg>
+            </div>
+            <div class="tech-name">React.js</div>
+            <div class="tech-proficiency">SaaS Frontends & Gutenberg</div>
+          </div>
+          <!-- Node.js -->
+          <div class="tech-card saas reveal reveal-scale delay-200">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:36px; height:36px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div class="tech-name">Node.js / Express</div>
+            <div class="tech-proficiency">High-throughput SaaS APIs</div>
+          </div>
+          <!-- Python -->
+          <div class="tech-card ai reveal reveal-scale delay-300">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:36px; height:36px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div class="tech-name">Python</div>
+            <div class="tech-proficiency">AI agent pipelines</div>
+          </div>
+          <!-- OpenAI / LLM -->
+          <div class="tech-card ai reveal reveal-scale delay-400">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:36px; height:36px;"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><circle cx="12" cy="12" r="4"></circle></svg>
+            </div>
+            <div class="tech-name">OpenAI & Claude</div>
+            <div class="tech-proficiency">Prompt & API engineering</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PORTFOLIO GRID
+         ========================================================================== -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag">PORTFOLIO</span>
+          <h2 class="section-title">Verified Production Deployments</h2>
+          <p class="section-desc">A curated archive of WordPress, SaaS, and AI automation structures deployed in production environments.</p>
+        </div>
+
+        <div class="portfolio-filters reveal reveal-up">
+          <button class="filter-btn active" data-filter="all">All Specialties</button>
+          <button class="filter-btn" data-filter="wordpress">WordPress Plugins</button>
+          <button class="filter-btn" data-filter="saas">SaaS Products</button>
+          <button class="filter-btn" data-filter="ai">AI & Automation</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Dynamically populated by JS/projects.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         DEVELOPER CONFIGURATOR PLAYGROUND
+         ========================================================================== -->
+    <section class="section" id="playground" style="background-color: var(--bg-secondary); border-top:1px solid var(--border-color); border-bottom:1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag">INTERACTIVE SANDBOX</span>
+          <h2 class="section-title">Dynamic Code Playground</h2>
+          <p class="section-desc">Toggle system parameters to see how clean, highly performant code and API structures generate in real-time.</p>
+        </div>
+
+        <div class="playground-panel reveal reveal-scale">
+          <div class="playground-controls">
+            <h3 class="control-label">System Configurations</h3>
+            
+            <div class="toggle-group">
+              <!-- Toggle: Caching -->
+              <div class="toggle-item active" data-config="caching">
+                <div class="toggle-info">
+                  <span class="toggle-title">High-Speed Transient Cache</span>
+                  <span class="toggle-desc">Saves DB cycles using transients/Redis</span>
+                </div>
+                <div class="switch" role="checkbox" aria-checked="true" aria-label="Toggle Transient Caching"></div>
+              </div>
+
+              <!-- Toggle: Security -->
+              <div class="toggle-item" data-config="security">
+                <div class="toggle-info">
+                  <span class="toggle-title">Strict API Authorization</span>
+                  <span class="toggle-desc">JWT authorization tokens & Origin checks</span>
+                </div>
+                <div class="switch" role="checkbox" aria-checked="false" aria-label="Toggle API Authorization"></div>
+              </div>
+
+              <!-- Toggle: AI Helper -->
+              <div class="toggle-item active" data-config="ai_helper">
+                <div class="toggle-info">
+                  <span class="toggle-title">OpenAI GPT-4o Model Hook</span>
+                  <span class="toggle-desc">Autonomous content parsing pipeline</span>
+                </div>
+                <div class="switch" role="checkbox" aria-checked="true" aria-label="Toggle AI GPT-4o Integrations"></div>
+              </div>
+
+              <!-- Toggle: Webhook Sync -->
+              <div class="toggle-item" data-config="webhook_sync">
+                <div class="toggle-info">
+                  <span class="toggle-title">Async CRM Webhook Dispatch</span>
+                  <span class="toggle-desc">Queue metrics directly into HubSpot/Salesforce</span>
+                </div>
+                <div class="switch" role="checkbox" aria-checked="false" aria-label="Toggle CRM Webhook Sync"></div>
+              </div>
+            </div>
+            
+            <div class="playground-info" style="font-size:0.8rem; color:var(--text-secondary); line-height: 1.5;">
+              <strong>ℹ️ Developer Note:</strong> This playground illustrates exact structures used to build scalable micro-plugins. Safe escaping and modular coding styles are fully enforced.
+            </div>
+          </div>
+
+          <div class="playground-output-wrapper">
+            <div class="playground-tabs" role="tablist" aria-label="Code Templates">
+              <button class="playground-tab active" data-tab="wp" role="tab" aria-selected="true" aria-controls="playground-code-output">WordPress Plugin (PHP)</button>
+              <button class="playground-tab" data-tab="saas" role="tab" aria-selected="false" aria-controls="playground-code-output">SaaS Node.js (TS)</button>
+              <button class="playground-tab" data-tab="ai" role="tab" aria-selected="false" aria-controls="playground-code-output">n8n Automation (JSON)</button>
+            </div>
+            <pre class="playground-output" id="playground-code-output" role="tabpanel" tabindex="0">
+              <!-- Code generated by js/playground.js -->
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TESTIMONIALS & TRUST HUB
+         ========================================================================== -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag">TESTIMONIALS</span>
+          <h2 class="section-title">Client Satisfaction Reviews</h2>
+          <p class="section-desc">Real reports from clients and product managers summarizing collaborative engineering deliverables.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Card 1 -->
+          <div class="testimonial-card reveal reveal-up">
+            <p class="testimonial-quote">
+              "Karamaq built a custom WooCommerce API sync plugin for our store that completely eliminated database timeouts. Checkout speed improved by 40% under high loads. Absolutely outstanding code quality!"
+            </p>
+            <div class="testimonial-client">
+              <div class="client-avatar" aria-hidden="true">JD</div>
+              <div class="client-info">
+                <span class="client-name">Jonathon Davis</span>
+                <span class="client-role">Founder, WooBrand Co.</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="testimonial-card reveal reveal-up delay-100">
+            <p class="testimonial-quote">
+              "The SaaS telemetry dashboard was delivered exactly to spec. Our developer team was highly impressed by the clean Postgres indices and clean JWT auth code. Scaling has been a breeze!"
+            </p>
+            <div class="testimonial-client">
+              <div class="client-avatar" aria-hidden="true">SL</div>
+              <div class="client-info">
+                <span class="client-name">Sarah Lindon</span>
+                <span class="client-role">Product Lead, MetricsFlow</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="testimonial-card reveal reveal-up delay-200">
+            <p class="testimonial-quote">
+              "Karamaq stiched our custom n8n lead scraping system into our internal database. It now autonomously routes leads and drafts custom follow-up emails, saving us 15+ manual support hours every week!"
+            </p>
+            <div class="testimonial-client">
+              <div class="client-avatar" aria-hidden="true">MK</div>
+              <div class="client-info">
+                <span class="client-name">Marcus Kael</span>
+                <span class="client-role">Operations Dir, AgentCore LLC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         DEVELOPMENT TIMELINE & MILESTONES
+         ========================================================================== -->
+    <section class="section" id="timeline" style="background-color: var(--bg-secondary); border-top:1px solid var(--border-color); border-bottom:1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag">ENGINEERING HISTORY</span>
+          <h2 class="section-title">Milestones & Achievements</h2>
+          <p class="section-desc">A timeline of senior developer contributions, public open-source plugin releases, and system launches.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item reveal reveal-up">
+            <div class="timeline-badge" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">2024 - Present</div>
+              <h3 class="timeline-title">Senior API & Automation Architect</h3>
+              <p class="timeline-desc">Specializing in stitching heavy corporate database systems with AI automation runtimes (n8n/Make). Constructing secure payment tunnels for high-traffic WooCommerce applications.</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item reveal reveal-up">
+            <div class="timeline-badge" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">2022 - 2024</div>
+              <h3 class="timeline-title">Lead SaaS Engineer (MetricsFlow)</h3>
+              <p class="timeline-desc">Architected the entire telemetry parsing pipeline utilizing Node.js, Express, and high-performance Redis cache configurations. Deployed multi-currency Stripe checkout gateways.</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item reveal reveal-up">
+            <div class="timeline-badge" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">2020 - 2022</div>
+              <h3 class="timeline-title">WordPress Plugin Developer</h3>
+              <p class="timeline-desc">Released 3 highly popular open-source plugins in the WordPress directory, accumulating over 150k+ active installations. Handled custom merchant plugin contracts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION & DISCOVERY FORM
+         ========================================================================== -->
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal reveal-up">
+          <span class="section-tag">COMMUNICATION</span>
+          <h2 class="contact-subtitle">Let's Build Something High-Converting</h2>
+          <p class="contact-text">
+            Looking to configure a lightweight WooCommerce hook, launch a scalable SaaS system, or construct an autonomous AI pipeline? Submit your parameters and I'll trace an execution plan.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px; height:20px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-detail-info">
+                <span class="contact-label">Secure Business Email</span>
+                <span class="contact-value">developer@karamaq.dev</span>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px; height:20px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div class="contact-detail-info">
+                <span class="contact-label">Consultation Status</span>
+                <span class="contact-value">Accepting Custom Projects</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Karamaq GitHub Developer Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px; height:20px;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Karamaq LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px; height:20px;"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-panel reveal reveal-up delay-100">
+          <form id="contact-form" aria-label="Client Discovery Consultation Form">
+            <div class="form-group">
+              <label for="form-name" class="form-label">Full Name / Company Representative</label>
+              <input type="text" id="form-name" class="form-input" placeholder="e.g. Sarah Lindon" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-email" class="form-label">Professional Email Address</label>
+              <input type="email" id="form-email" class="form-input" placeholder="e.g. sarah@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label">Project Scope / Technical Requirements</label>
+              <textarea id="form-message" class="form-textarea" placeholder="e.g. We require a custom WooCommerce payment webhook synchronizing order leads securely into Salesforce..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              Dispatch Technical Payload
+              <svg style="width:18px; height:18px;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-container">
+      <div>
+        <div class="footer-logo"><span>&lt;/&gt;</span> KARAMAQ</div>
+        <p class="footer-copyright" style="margin-top:0.5rem;">© 2026 Karamaq. Powered by GitHub Pages.</p>
+      </div>
+
+      <ul class="footer-nav">
+        <li><a href="#services" class="footer-link">Services</a></li>
+        <li><a href="#tech" class="footer-link">Stack</a></li>
+        <li><a href="#portfolio" class="footer-link">Projects</a></li>
+        <li><a href="#contact" class="footer-link">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       FLOATING AI CHATBOT WIDGET
+       ========================================================================== -->
+  <div class="chatbot-widget" id="chatbot-widget" role="complementary" aria-label="AI Developer Assistant Widget">
+    <button class="chatbot-bubble" id="chatbot-bubble" aria-label="Open AI Developer Assistant conversation window">
+      <!-- Chat Icon -->
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+      <span class="chatbot-status-indicator" aria-hidden="true"></span>
+    </button>
+
+    <div class="chatbot-container" id="chatbot-container">
+      <div class="chatbot-header">
+        <div class="chatbot-user-profile">
+          <div class="chatbot-avatar" aria-hidden="true">AI</div>
+          <div class="chatbot-title-group">
+            <span class="chatbot-name">Assistant Bot</span>
+            <span class="chatbot-status">Online and Ready</span>
+          </div>
+        </div>
+        <button class="chatbot-close-btn" id="chatbot-close-btn" aria-label="Close AI Developer Assistant window">
+          <svg style="width:20px; height:20px;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="chatbot-messages" id="chatbot-messages">
+        <!-- Message bubbles populated by js/chatbot.js -->
+      </div>
+
+      <div class="chatbot-quick-replies" role="group" aria-label="Quick Action Replies">
+        <button class="quick-reply-btn" data-action="about">Core Focus</button>
+        <button class="quick-reply-btn" data-action="stack">Tech Stack</button>
+        <button class="quick-reply-btn" data-action="pricing">Pricing Packages</button>
+        <button class="quick-reply-btn" data-action="contact">Book Consultation</button>
+      </div>
+
+      <div class="chatbot-input-container">
+        <input type="text" id="chatbot-input" class="chatbot-input" placeholder="Ask about services or stack..." aria-label="Type message to AI Developer Assistant">
+        <button class="chatbot-send-btn" id="chatbot-send-btn" aria-label="Send message to AI Developer Assistant">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Master JavaScript Engines -->
+  <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/playground.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
