@@ -65,8 +65,8 @@ Automating operational workflows using state-of-the-art LLMs:
   contact: `
 [COMMUNICATION PATHWAYS]
 Ready to scale your next infrastructure development:
-- Direct Email: dev@yourdomain.com
-- Github Pages: github.com/yourusername
+- Direct Email: karamaq07@gmail.com
+- Github Pages: karamaq07.github.io
 - Discovery Call: Use our scheduler below or type 'contact' in the Chatbot.
 - Status: Accepting high-profile contracts.
 `
