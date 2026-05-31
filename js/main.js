@@ -23,8 +23,8 @@ function initThemeManager() {
   const savedTheme = localStorage.getItem('theme');
   const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   
-  // Set default theme (Dark mode by default, or loaded preference)
-  const defaultTheme = savedTheme ? savedTheme : (systemPrefersDark ? 'dark' : 'dark');
+  // Set default theme (Light mode by default, or loaded preference)
+  const defaultTheme = savedTheme ? savedTheme : 'light';
   document.documentElement.setAttribute('data-theme', defaultTheme);
 
   // Toggle click event handler
