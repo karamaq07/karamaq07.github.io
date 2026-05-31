@@ -98,7 +98,7 @@ function initContactFormHandler() {
       return;
     }
 
-    // Simulate pipeline loading state
+    // Configure loading state
     const originalBtnText = submitBtn.innerHTML;
     submitBtn.disabled = true;
     submitBtn.innerHTML = `
@@ -115,7 +115,21 @@ function initContactFormHandler() {
       Processing transmission...
     `;
 
-    setTimeout(() => {
+    // Submit using FormSubmit AJAX API
+    fetch("https://formsubmit.co/ajax/karamaq07@gmail.com", {
+      method: "POST",
+      headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        message: message
+      })
+    })
+    .then(response => response.json())
+    .then(data => {
       // Transition to success state
       submitBtn.innerHTML = `
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px; height:18px; color:#10b981;">
@@ -133,7 +147,18 @@ function initContactFormHandler() {
         submitBtn.innerHTML = originalBtnText;
         submitBtn.style.backgroundColor = '';
       }, 4000);
-    }, 1500);
+    })
+    .catch(error => {
+      console.error('Error submitting form:', error);
+      submitBtn.innerHTML = 'Transmission Failed. Retry';
+      submitBtn.style.backgroundColor = 'var(--color-danger)';
+      
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+        submitBtn.style.backgroundColor = '';
+      }, 4000);
+    });
   });
 }
 
